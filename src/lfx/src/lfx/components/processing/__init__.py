@@ -8,6 +8,7 @@ from lfx.components._importing import import_mod
 
 if TYPE_CHECKING:
     from lfx.components.processing.combine_text import CombineTextComponent
+    from lfx.components.processing.component_keyword_search import DataFrameKeywordSearch
     from lfx.components.processing.converter import TypeConverterComponent
     from lfx.components.processing.create_list import CreateListComponent
     from lfx.components.processing.data_operations import DataOperationsComponent
@@ -23,6 +24,7 @@ if TYPE_CHECKING:
 
 _dynamic_imports = {
     "CombineTextComponent": "combine_text",
+    "DataFrameKeywordSearch": "component_keyword_search",
     "TypeConverterComponent": "converter",
     "CreateListComponent": "create_list",
     "DataOperationsComponent": "data_operations",
@@ -40,6 +42,7 @@ _dynamic_imports = {
 __all__ = [
     "CombineTextComponent",
     "CreateListComponent",
+    "DataFrameKeywordSearch",
     "DataFrameOperationsComponent",
     "DataOperationsComponent",
     "JSONCleaner",
